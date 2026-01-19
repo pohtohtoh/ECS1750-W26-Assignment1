@@ -1,0 +1,106 @@
+{
+    "models": [
+        {
+            "name": "cow",
+            "obj": "./models/cow.obj"
+        }
+    ],
+    "scenegraph": {
+        "name": "root",
+        "type": "node",
+        "transformation": {
+            "translation": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        "children": [
+            {
+                "name": "big_cow_node",
+                "type": "model",
+                "content": "cow",
+                "transformation": {
+                    "translation": [
+                        0.02770835906267166,
+                        -0.23248988389968872,
+                        0.1199951022863388
+                    ],
+                    "rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                "children": [
+                    {
+                        "name": "medium_cow_node",
+                        "type": "model",
+                        "content": "cow",
+                        "transformation": {
+                            "translation": [
+                                -0.0744030773639679,
+                                0.640876829624176,
+                                -0.03958244249224663
+                            ],
+                            "rotation": [
+                                0,
+                                0,
+                                0,
+                                1
+                            ],
+                            "scale": [
+                                0.6058207750320435,
+                                0.6058207750320435,
+                                0.6058207750320435
+                            ]
+                        },
+                        "children": [
+                            {
+                                "name": "small_cow_node",
+                                "type": "model",
+                                "content": "cow",
+                                "transformation": {
+                                    "translation": [
+                                        -0.143990620970726,
+                                        0.5922694802284241,
+                                        -0.05994115769863129
+                                    ],
+                                    "rotation": [
+                                        0,
+                                        0,
+                                        0,
+                                        1
+                                    ],
+                                    "scale": [
+                                        0.5365747213363647,
+                                        0.5365747213363647,
+                                        0.5365747213363647
+                                    ]
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

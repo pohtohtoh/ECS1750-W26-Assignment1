@@ -1,0 +1,19 @@
+{
+    "models": [
+        {
+            "name": "max-planck",
+            "obj": "./models/max-planck.obj"
+        }
+    ],
+    "scenegraph": {
+        "name": "model_node",
+        "type": "model",
+        "content": "max-planck",
+        "transformation": {
+            "translation": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        },
+        "children": []
+    }
+}

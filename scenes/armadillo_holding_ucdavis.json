@@ -1,0 +1,113 @@
+{
+    "models": [
+        {
+            "name": "armadillo",
+            "obj": "./models/armadillo.obj"
+        },
+        {
+            "name": "ucdavis",
+            "obj": "./models/ucd_logo.obj"
+        },
+        {
+            "name": "platform",
+            "obj": "./models/platform.obj"
+        }
+    ],
+    "scenegraph": {
+        "name": "root",
+        "type": "node",
+        "transformation": {
+            "translation": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ]
+        },
+        "children": [
+            {
+                "name": "platforn_node",
+                "type": "model",
+                "content": "platform",
+                "transformation": {
+                    "translation": [
+                        0,
+                        -1,
+                        0
+                    ],
+                    "rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                "children": []
+            },
+            {
+                "name": "armadillo_node",
+                "type": "model",
+                "content": "armadillo",
+                "transformation": {
+                    "translation": [
+                        0.032400671392679214,
+                        -0.08804865181446075,
+                        0.20748820900917053
+                    ],
+                    "rotation": [
+                        0,
+                        0,
+                        0,
+                        1
+                    ],
+                    "scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                "children": [
+                    {
+                        "name": "ucdavis_node",
+                        "type": "model",
+                        "content": "ucdavis",
+                        "transformation": {
+                            "translation": [
+                                -0.11373203992843628,
+                                0.7791299223899841,
+                                -0.8995022177696228
+                            ],
+                            "rotation": [
+                                -0.043568526881153216,
+                                0.9950363988887098,
+                                0.07914209400629854,
+                                0.04172382176341469
+                            ],
+                            "scale": [
+                                0.6671538136222561,
+                                0.6671534888210042,
+                                0.6671539007373902
+                            ]
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    }
+}

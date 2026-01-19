@@ -1,0 +1,19 @@
+{
+    "models": [
+        {
+            "name": "ucd_logo",
+            "obj": "./models/ucd_logo.obj"
+        }
+    ],
+    "scenegraph": {
+        "name": "model_node",
+        "type": "model",
+        "content": "ucd_logo",
+        "transformation": {
+            "translation": [0, 0, 0],
+            "rotation": [0, 180, 0],
+            "scale": [1, 1, 1]
+        },
+        "children": []
+    }
+}

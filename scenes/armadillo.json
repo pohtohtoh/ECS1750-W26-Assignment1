@@ -1,0 +1,19 @@
+{
+    "models": [
+        {
+            "name": "armadillo",
+            "obj": "./models/armadillo.obj"
+        }
+    ],
+    "scenegraph": {
+        "name": "model_node",
+        "type": "model",
+        "content": "armadillo",
+        "transformation": {
+            "translation": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [1, 1, 1]
+        },
+        "children": []
+    }
+}
